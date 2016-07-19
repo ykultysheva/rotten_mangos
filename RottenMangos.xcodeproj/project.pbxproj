@@ -18,6 +18,11 @@
 		97BBC3761D3D70E900D042FD /* DetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC3751D3D70E900D042FD /* DetailedViewController.m */; };
 		97BBC3791D3E840600D042FD /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC3781D3E840600D042FD /* Review.m */; };
 		97BBC37C1D3E88F900D042FD /* CustomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC37B1D3E88F900D042FD /* CustomCell2.m */; };
+		97BBC37E1D3EA03D00D042FD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BBC37D1D3EA03D00D042FD /* MapKit.framework */; };
+		97BBC3811D3EA4E900D042FD /* TheaterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC3801D3EA4E900D042FD /* TheaterMap.m */; };
+		97BBC3831D3EB1E000D042FD /* GPX.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 97BBC3821D3EB1E000D042FD /* GPX.gpx */; };
+		97BBC3851D3EB24800D042FD /* NorthYork.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 97BBC3841D3EB24800D042FD /* NorthYork.gpx */; };
+		97BBC3881D3ED16700D042FD /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC3871D3ED16700D042FD /* Theater.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,13 @@
 		97BBC3781D3E840600D042FD /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
 		97BBC37A1D3E88F900D042FD /* CustomCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell2.h; sourceTree = "<group>"; };
 		97BBC37B1D3E88F900D042FD /* CustomCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell2.m; sourceTree = "<group>"; };
+		97BBC37D1D3EA03D00D042FD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		97BBC37F1D3EA4E900D042FD /* TheaterMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterMap.h; sourceTree = "<group>"; };
+		97BBC3801D3EA4E900D042FD /* TheaterMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterMap.m; sourceTree = "<group>"; };
+		97BBC3821D3EB1E000D042FD /* GPX.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GPX.gpx; sourceTree = "<group>"; };
+		97BBC3841D3EB24800D042FD /* NorthYork.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NorthYork.gpx; sourceTree = "<group>"; };
+		97BBC3861D3ED16700D042FD /* Theater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
+		97BBC3871D3ED16700D042FD /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BBC37E1D3EA03D00D042FD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +70,9 @@
 		97BBC34B1D3D4CB600D042FD = {
 			isa = PBXGroup;
 			children = (
+				97BBC3841D3EB24800D042FD /* NorthYork.gpx */,
+				97BBC3821D3EB1E000D042FD /* GPX.gpx */,
+				97BBC37D1D3EA03D00D042FD /* MapKit.framework */,
 				97BBC3561D3D4CB600D042FD /* RottenMangos */,
 				97BBC3551D3D4CB600D042FD /* Products */,
 			);
@@ -84,6 +100,10 @@
 				97BBC3601D3D4CB600D042FD /* Main.storyboard */,
 				97BBC3741D3D70E900D042FD /* DetailedViewController.h */,
 				97BBC3751D3D70E900D042FD /* DetailedViewController.m */,
+				97BBC3861D3ED16700D042FD /* Theater.h */,
+				97BBC3871D3ED16700D042FD /* Theater.m */,
+				97BBC37F1D3EA4E900D042FD /* TheaterMap.h */,
+				97BBC3801D3EA4E900D042FD /* TheaterMap.m */,
 				97BBC37A1D3E88F900D042FD /* CustomCell2.h */,
 				97BBC37B1D3E88F900D042FD /* CustomCell2.m */,
 				97BBC36E1D3D4E7000D042FD /* CustomCell.h */,
@@ -162,8 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				97BBC3671D3D4CB600D042FD /* LaunchScreen.storyboard in Resources */,
+				97BBC3851D3EB24800D042FD /* NorthYork.gpx in Resources */,
 				97BBC3641D3D4CB600D042FD /* Assets.xcassets in Resources */,
 				97BBC3621D3D4CB600D042FD /* Main.storyboard in Resources */,
+				97BBC3831D3EB1E000D042FD /* GPX.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,10 +200,12 @@
 				97BBC35C1D3D4CB600D042FD /* AppDelegate.m in Sources */,
 				97BBC3731D3D54EA00D042FD /* Movie.m in Sources */,
 				97BBC3701D3D4E7000D042FD /* CustomCell.m in Sources */,
+				97BBC3811D3EA4E900D042FD /* TheaterMap.m in Sources */,
 				97BBC3761D3D70E900D042FD /* DetailedViewController.m in Sources */,
 				97BBC37C1D3E88F900D042FD /* CustomCell2.m in Sources */,
 				97BBC3791D3E840600D042FD /* Review.m in Sources */,
 				97BBC3591D3D4CB600D042FD /* main.m in Sources */,
+				97BBC3881D3ED16700D042FD /* Theater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,9 @@
 #import "DetailedViewController.h"
 #import "Review.h"
 #import "CustomCell2.h"
+#import "TheaterMap.h"
 
-@interface DetailedViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
-
+@interface DetailedViewController ()
 @property NSMutableArray *reviews;
 @property UICollectionViewFlowLayout *firstLayout;
 
@@ -48,7 +48,7 @@
     NSURLSessionDataTask *dataTask = [sharedSession dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         
-        NSLog(@"C. Request Done");
+//        NSLog(@"C. Request Done");
         
         if (!error) {
             //             NSLog(@"Data: %@", data);
@@ -69,7 +69,7 @@
                 NSMutableArray *reviews = [NSMutableArray array];
                 
                 for (NSDictionary *reviewDict in responseDict[@"reviews"]) {
-                    NSLog(@"Movie review %@", reviewDict[@"quote"]);
+//                    NSLog(@"Movie review %@", reviewDict[@"quote"]);
                     Review *review =[[Review alloc] init];
                     review.critic = reviewDict[@"critic"];
                     review.quote = reviewDict[@"quote"];
@@ -96,9 +96,9 @@
         
     }];
     
-    NSLog(@"A. Before request starts");
+//    NSLog(@"A. Before request starts");
     [dataTask resume];
-    NSLog(@"B. After request starts");
+//    NSLog(@"B. After request starts");
 
     
     
@@ -155,15 +155,32 @@
     
     return cell;
 }
+- (IBAction)goToTheaters:(id)sender {
+  
+    [self performSegueWithIdentifier:@"toTheaters" sender:(id)sender];
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+            
+//            
+//            DetailedViewController *dvc = (DetailedViewController *)[segue destinationViewController];
+//            
+//            dvc.movie = detailedMovie;
+    
+    
 }
-*/
+
+
+
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+     
+     if ([[segue identifier] isEqualToString:@"ToTheaters"]) {
+
+         
+         TheaterMap *tmc = (TheaterMap *)[segue destinationViewController];
+         tmc.movie = self.movie;
+     
+    }
+     
+ }
+
 
 @end

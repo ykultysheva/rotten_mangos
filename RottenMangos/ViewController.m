@@ -10,9 +10,11 @@
 #import "Movie.h"
 #import "CustomCell.h"
 #import "DetailedViewController.h"
+@import MapKit;
+@import CoreLocation;
 
 
-@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource,CLLocationManagerDelegate, MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *CollectionView;
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *CollectionViewFlowLayout;
 @property UICollectionViewFlowLayout *firstLayout;

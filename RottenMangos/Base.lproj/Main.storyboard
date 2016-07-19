@@ -92,7 +92,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="-334"/>
         </scene>
-        <!--Detailed View Controller-->
+        <!--Title-->
         <scene sceneID="kYQ-qD-bcr">
             <objects>
                 <viewController id="FFT-LS-B7t" customClass="DetailedViewController" sceneMemberID="viewController">
@@ -121,7 +121,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfM-ch-gY2">
-                                                    <rect key="frame" x="177.5" y="16" width="200" height="21"/>
+                                                    <rect key="frame" x="177" y="16" width="200" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="200" id="3Sr-NB-WGW"/>
                                                     </constraints>
@@ -168,6 +168,14 @@
                             <constraint firstItem="dRT-Ft-INF" firstAttribute="top" secondItem="MEJ-Tm-YQd" secondAttribute="bottom" id="ukS-9p-HvN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="7tP-Gh-nF2">
+                        <barButtonItem key="rightBarButtonItem" title="See Theaters" id="bw7-5B-nj1">
+                            <connections>
+                                <action selector="goToTheaters:" destination="FFT-LS-B7t" id="WtB-N7-wKq"/>
+                                <segue destination="HBa-EA-ZSo" kind="show" identifier="ToTheaters" id="KUK-oH-dsT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="CollectionView" destination="MEJ-Tm-YQd" id="YKS-HP-q6O"/>
                         <outlet property="CollectionViewFlowLayout" destination="458-Dt-zpG" id="tkh-0m-oGd"/>
@@ -175,7 +183,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTn-b3-Sse" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1754" y="-334"/>
+            <point key="canvasLocation" x="1756" y="-284"/>
+        </scene>
+        <!--Theater Map-->
+        <scene sceneID="9x5-vK-x7I">
+            <objects>
+                <viewController id="HBa-EA-ZSo" customClass="TheaterMap" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YAU-uA-xta"/>
+                        <viewControllerLayoutGuide type="bottom" id="P5c-oP-ygi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pqC-pL-Ef0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="onI-By-MLb">
+                                <rect key="frame" x="20" y="64" width="560" height="536"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HBa-EA-ZSo" id="lpU-up-Jz9"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="onI-By-MLb" firstAttribute="leading" secondItem="pqC-pL-Ef0" secondAttribute="leadingMargin" id="OBv-ZG-yA5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="onI-By-MLb" secondAttribute="trailing" id="TYh-L9-n5q"/>
+                            <constraint firstItem="P5c-oP-ygi" firstAttribute="top" secondItem="onI-By-MLb" secondAttribute="bottom" id="VNJ-A7-DTT"/>
+                            <constraint firstItem="onI-By-MLb" firstAttribute="top" secondItem="YAU-uA-xta" secondAttribute="bottom" id="vQI-Q7-HUV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MapView" destination="onI-By-MLb" id="r9X-UU-OuY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SkM-AH-N8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2455" y="-284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FMw-1b-hgF">
