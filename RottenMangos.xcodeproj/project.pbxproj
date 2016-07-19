@@ -13,6 +13,11 @@
 		97BBC3621D3D4CB600D042FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BBC3601D3D4CB600D042FD /* Main.storyboard */; };
 		97BBC3641D3D4CB600D042FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97BBC3631D3D4CB600D042FD /* Assets.xcassets */; };
 		97BBC3671D3D4CB600D042FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BBC3651D3D4CB600D042FD /* LaunchScreen.storyboard */; };
+		97BBC3701D3D4E7000D042FD /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC36F1D3D4E7000D042FD /* CustomCell.m */; };
+		97BBC3731D3D54EA00D042FD /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC3721D3D54EA00D042FD /* Movie.m */; };
+		97BBC3761D3D70E900D042FD /* DetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC3751D3D70E900D042FD /* DetailedViewController.m */; };
+		97BBC3791D3E840600D042FD /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC3781D3E840600D042FD /* Review.m */; };
+		97BBC37C1D3E88F900D042FD /* CustomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBC37B1D3E88F900D042FD /* CustomCell2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		97BBC3631D3D4CB600D042FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97BBC3661D3D4CB600D042FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97BBC3681D3D4CB600D042FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97BBC36E1D3D4E7000D042FD /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		97BBC36F1D3D4E7000D042FD /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		97BBC3711D3D54EA00D042FD /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		97BBC3721D3D54EA00D042FD /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		97BBC3741D3D70E900D042FD /* DetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedViewController.h; sourceTree = "<group>"; };
+		97BBC3751D3D70E900D042FD /* DetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedViewController.m; sourceTree = "<group>"; };
+		97BBC3771D3E840600D042FD /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
+		97BBC3781D3E840600D042FD /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
+		97BBC37A1D3E88F900D042FD /* CustomCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell2.h; sourceTree = "<group>"; };
+		97BBC37B1D3E88F900D042FD /* CustomCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +77,17 @@
 				97BBC35B1D3D4CB600D042FD /* AppDelegate.m */,
 				97BBC35D1D3D4CB600D042FD /* ViewController.h */,
 				97BBC35E1D3D4CB600D042FD /* ViewController.m */,
+				97BBC3771D3E840600D042FD /* Review.h */,
+				97BBC3781D3E840600D042FD /* Review.m */,
+				97BBC3711D3D54EA00D042FD /* Movie.h */,
+				97BBC3721D3D54EA00D042FD /* Movie.m */,
 				97BBC3601D3D4CB600D042FD /* Main.storyboard */,
+				97BBC3741D3D70E900D042FD /* DetailedViewController.h */,
+				97BBC3751D3D70E900D042FD /* DetailedViewController.m */,
+				97BBC37A1D3E88F900D042FD /* CustomCell2.h */,
+				97BBC37B1D3E88F900D042FD /* CustomCell2.m */,
+				97BBC36E1D3D4E7000D042FD /* CustomCell.h */,
+				97BBC36F1D3D4E7000D042FD /* CustomCell.m */,
 				97BBC3631D3D4CB600D042FD /* Assets.xcassets */,
 				97BBC3651D3D4CB600D042FD /* LaunchScreen.storyboard */,
 				97BBC3681D3D4CB600D042FD /* Info.plist */,
@@ -151,6 +176,11 @@
 			files = (
 				97BBC35F1D3D4CB600D042FD /* ViewController.m in Sources */,
 				97BBC35C1D3D4CB600D042FD /* AppDelegate.m in Sources */,
+				97BBC3731D3D54EA00D042FD /* Movie.m in Sources */,
+				97BBC3701D3D4E7000D042FD /* CustomCell.m in Sources */,
+				97BBC3761D3D70E900D042FD /* DetailedViewController.m in Sources */,
+				97BBC37C1D3E88F900D042FD /* CustomCell2.m in Sources */,
+				97BBC3791D3E840600D042FD /* Review.m in Sources */,
 				97BBC3591D3D4CB600D042FD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +330,7 @@
 				97BBC36D1D3D4CB600D042FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
